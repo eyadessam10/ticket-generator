@@ -32,6 +32,7 @@ function create(){
 
 //--------------------------generate function-------------------------
     generateBtn.onclick = function(){
+        if(fullName.value != '' && emailAdress.value != '' && gitHubUserNameInput != ''){
         form.style.display = 'none'
         generatedTicket.style.display = 'flex'
         console.log(fullName.value)
@@ -42,6 +43,7 @@ function create(){
             ticketUserName.innerHTML = datapro[i].fullName
             gitHubUserName.innerHTML = datapro[i].gitHubUserNameInput
         }
+    }
     }
 //------------------------------avatar fuction----------------------------
 // منع فتح الصورة في المتصفح
